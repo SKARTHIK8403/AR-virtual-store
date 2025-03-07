@@ -1,0 +1,186 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Clothing Store</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #cart-button, #reset-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #reset-button { right: 100px; }
+        #product-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            display: none;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button id="cart-button">🛒 Cart (0)</button>
+    <button id="reset-button">🔄 Reset View</button>
+    <div id="product-info"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    
+    <script src="/static/js/store.js"></script>
+</body>
+</html>-->
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Clothing Store</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #cart-button, #reset-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #reset-button { right: 100px; }
+    </style>
+</head>
+<body>
+    <button id="cart-button">🛒 Cart (0)</button>
+    <button id="reset-button">🔄 Reset View</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/controls/PointerLockControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="/static/js/store.js"></script>
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Clothing Store</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+        #cart-button, #reset-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            border: 1px solid black;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #reset-button { right: 100px; }
+        #popup {
+            display: none; 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            background: white; 
+            padding: 20px; 
+            border: 1px solid black;
+            z-index: 100;
+        }
+        #popup canvas { width: 300px; height: 300px; }
+        #close-popup {
+            background: red; 
+            color: white; 
+            border: none;
+            padding: 5px; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="cart-button">🛒 Cart (0)</button>
+    <button id="reset-button">🔄 Reset View</button>
+
+    <div id="popup">
+        <button id="close-popup">Close</button>
+        <h3 id="product-name"></h3>
+        <p id="product-price"></p>
+        <canvas id="product-view"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.140.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="/static/js/store.js"></script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Store</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/PointerLockControls.js"></script>
+    <style>
+        body { margin: 0; overflow: hidden; }
+
+#enterStore {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 10;
+}
+    </style>
+</head>
+<body>
+    <div id="popup">
+        <h2 id="productTitle"></h2>
+        <p id="productPrice"></p>
+        <button id="closePopup">Close</button>
+    </div>
+
+    <script src="/static//js/store.js"></script>
+
+</body>
+</html>
+
+
